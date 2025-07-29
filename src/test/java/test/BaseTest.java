@@ -9,7 +9,7 @@ public class BaseTest {
 	
 	WebDriver driver;
 	
-	public void setuBrowser(String browser, String url) {
+	public void setupBrowser(String browser, String url) {
 		
 		if(browser.equalsIgnoreCase("chrome"))
 			driver = new ChromeDriver();

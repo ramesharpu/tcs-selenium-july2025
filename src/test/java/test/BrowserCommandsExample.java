@@ -46,7 +46,7 @@ public class BrowserCommandsExample extends BaseTest{
 	
 	public static void main(String[] args) {
 		BrowserCommandsExample obj = new BrowserCommandsExample();
-		obj.setuBrowser("chrome", "https://www.facebook.com");
+		obj.setupBrowser("chrome", "https://www.facebook.com");
 		obj.demo();
 	}
 }
