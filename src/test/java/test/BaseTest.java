@@ -1,5 +1,7 @@
 package test;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -22,6 +24,15 @@ public class BaseTest {
 			System.exit(0);
 		}
 				
+		//implicit wait
+//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		
+		//page load timeout ==> usually defined in POM
+//		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
+		
+		//script load timeout ==> either in setup method (for project level) or POM (for page/module level)
+//		driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(10));
+		
 		if(url!="")		
 			driver.get(url);
 		else
